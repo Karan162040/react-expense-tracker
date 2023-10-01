@@ -13,6 +13,7 @@ const ExpenseForm = (props) => {
     setenterdTitle("");
     setenterdAmount("");
     setenterdDate("");
+    setenterdLocation("");
   };
   const [enterdtitle, setenterdTitle] = useState("");
   const [enterdAmount, setenterdAmount] = useState("");
