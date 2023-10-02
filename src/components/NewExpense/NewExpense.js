@@ -1,5 +1,5 @@
 import "./NewExpense.css";
-import ExpenseForm from "./ExpenseForm";
+import ExpenseModal from "./ExpenseModal";
 const NewExpense = (props) => {
   const saveExpenseHandler = (enteredExpenseData) => {
     const expenseData = {
@@ -10,7 +10,7 @@ const NewExpense = (props) => {
   };
   return (
     <div className="new-expense">
-      <ExpenseForm onSaveExpenseData={saveExpenseHandler} />
+      <ExpenseModal onOpenModal={saveExpenseHandler} />
     </div>
   );
 };

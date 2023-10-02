@@ -36,6 +36,7 @@ const App = () => {
   const addExpenseHandler = (expense) => {
     setExpenses((prevExpense) => [expense, ...prevExpense]);
   };
+
   return (
     <div>
       <NewExpense onAddExpense={addExpenseHandler} />
